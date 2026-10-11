@@ -1,0 +1,30 @@
+\ProvidesPackage{ResuKit/resume}
+
+% Core dependencies
+\RequirePackage{geometry}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{inputenc}
+\RequirePackage{charter}
+
+\RequirePackage{bookmark}
+\RequirePackage{titlesec}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{hyperref}
+\RequirePackage{xcolor}
+\RequirePackage{microtype}
+
+% PDF / ATS
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Framework configuration
+\input{ResuKit/config/page}
+\input{ResuKit/config/headings}
+\input{ResuKit/config/lists}
+\input{ResuKit/config/pdf}
+
+% Framework components
+\input{ResuKit/config/components}

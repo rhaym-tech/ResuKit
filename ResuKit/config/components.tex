@@ -1,0 +1,52 @@
+\newcommand{\resumeEntry}[4]{
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4}
+    \end{tabular*}
+}
+
+\newcommand{\projectEntry}[2]{
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \textbf{#1} & \textit{#2}
+    \end{tabular*}
+}
+
+\newenvironment{resumeBullets}{
+    \begin{itemize}
+}{
+    \end{itemize}
+}
+
+\newenvironment{resumeHeader}{
+    \begin{center}
+        \linespread{1.05}\selectfont
+}{
+    \end{center}
+}
+
+\newenvironment{skillset}[1]{\textbf{#1:}}
+
+\newcommand{\headertitle}[1]{
+    {\LARGE\bfseries #1}
+    \vspace{0.15cm}
+    \hrule
+    \vspace{0.30cm}
+}
+
+\newcommand{\headeritem}[1]{
+    #1
+    \vspace{0.10cm}
+}
+
+\newcommand{\headeritemhref}[2]{
+    \href{#1}{#2}
+    \vspace{0.10cm}
+}
+
+\newcommand{\separator}{
+    \space\textbullet\space
+}
+
+\newcommand{\entryspace}{
+    \vspace{0.25em}
+}
